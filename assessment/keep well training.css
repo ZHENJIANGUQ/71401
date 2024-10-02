@@ -1,0 +1,402 @@
+html {
+    background-color: #76837e;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.25em 1em 1.5em;
+    align-items: center;
+  }
+  
+  .Keep Well logo {
+    margin-left: 5%;
+  }
+  
+  .logo-text {
+    color: #f3f0f0;
+    font-size: 80px;
+    font-weight: bold;
+    text-decoration-line: none;
+    text-align: center;
+  }
+  
+  .header-search {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+  }
+  
+  .global-search{
+    align-items: center;
+    display: flex;
+  }
+  
+  .header-search-input {
+    width: 250px;
+    height: 40px;
+    color: #666;
+    margin-right: -10px;
+    padding-left: 1em;
+    padding-right: 1em;
+    background-color: rgb(255, 255, 255, 0.8);
+    border-radius: 1em 0 0 1em;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border: 1px solid #666;
+    cursor: pointer;
+    font-size: larger;
+  }
+  
+  .header button {
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  nav {
+    position: relative;
+    display: block;
+    font-size: 1.25em;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 64px;
+  }
+  
+  nav li {
+    text-align: center;
+  }
+  
+  .nav a {
+    height: 100%;
+    box-shadow: 0 0.2rem 0.85rem rgba(0, 0, 0, 0.2);
+    background: rgba(167, 146, 146, 0.651);
+    text-decoration-line: none;
+    color: #fffffff1;
+    background-color: #000000;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid transparent;
+    display: flex;
+    transition: 0.2s ease;
+    border-radius: 50px;
+  }
+  
+  .nav .active,
+  .nav a:hover {
+    background-color: #000000;
+  }
+  
+  .title {
+    background-color: #f1f5f2;
+    align-items: center;
+    color: #fff;
+    padding-inline: 27%;
+    margin-inline: -10px;
+  }
+  
+  .title .head {
+    font-size: 38px;
+    padding-top: 2rem;
+  }
+  
+  .title .comment {
+    font-size: 20px;
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+  }
+  
+  
+  
+  img {
+    width: 300px;
+    border-radius: 50px;
+  }
+  
+  
+  .origin-calendar-placeholder {
+    width: 350px; 
+    height: 250px; 
+  }
+  
+  
+  
+  
+  .module-container {
+    background-color: #8a8d95;
+    padding: 20px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    margin: 0 auto; 
+  }
+  
+  
+  
+  .calendar-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  
+  .navbutton img {
+    width: 100px; 
+    height: auto; 
+    border-radius: 20px; 
+    cursor: pointer; 
+  }
+  
+  .navbutton img:hover {
+    opacity: 0.8; 
+  }
+  
+  .nav-button {
+    position: absolute;
+    margin-top: 40%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .navbutton img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+  }
+  
+  .navbutton img:hover {
+    opacity: 0.8;
+  }
+  
+  
+  
+  .reviews-section {
+    padding: 40px 20px 20px 20px; 
+    margin-top: -20px; 
+    background-color: #657367;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  
+  .reviews-container {
+    display: flex;
+    justify-content: space-between;  
+    gap: 20px;                       
+  }
+  
+  .review-card {
+    background-color: #b1b0b2f8;    
+    border-radius: 10px;            
+    padding: 20px;
+    width: 30%;                    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+    transition: transform 0.3s ease;           
+  }
+  
+  .review-card:hover {
+    transform: translateY(-10px);  
+  }
+  
+  .review-stars {
+    font-size: 18px;
+    color: #d71313;  
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #333;               
+    background-color: transparent;  
+    border: none;              
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+  
+  
+  .reviewer-info {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .reviewer-photo {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .reviewer-details p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  
+  
+  
+  
+  .facilities-list img {
+    width: 50px; 
+    height: auto; 
+    border-radius: 5px; 
+  }
+  
+  
+  
+  .fitness-title {
+    font-size: 48px; 
+    font-weight: bold;
+    color: #dadee2; 
+    margin-bottom: 10px; 
+    text-align: center; 
+  }
+  
+  
+  .course-subtitle {
+    font-size: 36px; 
+    color: #c7bcbc; 
+    margin-bottom: 15px; 
+    text-align: center;
+  }
+  
+  .lessons-available {
+    font-size: 24px; 
+    color: #dcdbdb; 
+    font-style: italic;
+    margin-top: 20px; 
+  }
+  
+  
+  
+  
+  .Private-Lessons-list {
+    list-style: none; 
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-around;
+    padding: 0;
+  }
+  
+  .Private-Lessons-list li {
+    flex: 0 1 23%; 
+    margin: 10px; 
+  }
+  
+  
+  .main {
+    margin-top: -16px;
+    background-color: #D6EAD9;
+    align-items: center;
+    padding-inline: 27%;
+    margin-inline: -10px;
+  }
+  
+  
+  h2 {
+    font-weight: 400;
+  }
+  
+  .content {
+    padding-top: 20px;
+    padding-bottom: 30px;
+  }
+  
+  
+  
+  
+  .footer {
+    background-color: #555757;
+    padding: 40px 0;
+    color: white;
+    text-align: center;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20%;
+    align-items: flex-start;
+  }
+  
+  .footer-about {
+    width: 60%;
+  }
+  
+  .footer-menu {
+    width: 30%;
+  }
+  
+  .footer-menu h2 {
+    text-align: center;
+  }
+  
+  .footer-menu ul {
+    list-style-type: none;
+    padding-left: 0;
+    display: block;
+  }
+  
+  .footer-menu ul li {
+    margin: 10px 0;
+  }
+  
+  .footer-menu ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-menu ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-about p {
+    line-height: 1.6;
+    text-align: left;
+    color: white;
+    text-align: justify;
+  }
+  
+  
+  @media (max-width: 1024px) and (min-width: 768px) {
+    .nav-button {
+      top: 120%; 
+      left: 75%;
+    }
+  
+    .navbutton img {
+      width: 80px; 
+    }
+  }
+  
+  
+  @media (max-width: 768px) {
+    .nav-button {
+      top: 100%; 
+      left: 50%;
+    }
+  
+    .navbutton img {
+      width: 60px; 
+    }
+  }

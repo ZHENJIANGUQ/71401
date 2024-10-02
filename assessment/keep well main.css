@@ -48,7 +48,7 @@ html {
 }
 
 .header button {
-  background-color: #eb0a0a;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -86,6 +86,7 @@ nav li {
   border: 1px solid transparent;
   display: flex;
   transition: 0.2s ease;
+  border-radius: 50px;
 }
 
 .nav .active,
@@ -281,7 +282,7 @@ h3 {
 
 .lessons-available {
   font-size: 24px; 
-  color: #f70707; 
+  color: #dcdbdb; 
   font-style: italic;
   margin-top: 20px; 
 }
