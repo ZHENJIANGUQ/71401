@@ -1,0 +1,39 @@
+
+.calendar-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  
+  .navbutton img {
+    width: 100px; 
+    height: auto; 
+    border-radius: 20px; 
+    cursor: pointer; 
+  }
+  
+  .navbutton img:hover {
+    opacity: 0.8; 
+  }
+  
+  .nav-button {
+    position: absolute;
+    margin-top: 40%;
+    left: 85%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .navbutton img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+  }
+  
+  .navbutton img:hover {
+    opacity: 0.8;
+  }
+  
