@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/css_reset.css">
+    
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
 </head>
 <body>
     <header class="header">
@@ -26,7 +29,7 @@
         </div>
     </header>
 
-    
+
     <nav class="nav" aria-label="primary navigation">
         <ul>
             <li style="position: absolute; left: 5%;">
@@ -50,57 +53,50 @@
         </ul>
     </nav>
 
-    <div class="image-container">
-        <img src="img/he001.jpg" alt="Healthy Food">
-    </div>
 
+
+
+
+
+
+    <h1 class="event-form__title">Submit Your Event</h1>
+    <form id="eventForm" class="event-form">
+      <label for="eventName" class="event-form__label">Event Name:</label>
+      <input type="text" id="eventName" name="event_name" required maxlength="255" class="event-form__input"><br><br>
     
-    <title>Benefits of Healthy Eating</title>
-</head>
-<body class="he-page">
-
-    <header class="he-main-header">
-        <h1 class="he-header-title">Benefits of Healthy Eating</h1>
-        <p class="he-header-description">Following a healthy diet has many benefits, including building strong bones, protecting the heart, preventing disease, and boosting mood.</p>
-    </header>
-
-<main class="he-main-content">
-    <section class="he-benefit-section">
-        <h2 class="he-title">Heart Health</h2>
-        <p class="he-description">According to the Centers for Disease Control and Prevention (CDC), heart disease is the leading cause of death for adults in the United States.</p>
-        <p class="he-description">The American Heart Association (AHA) states that almost half of U.S. adults live with some form of cardiovascular disease.</p>
-        <p class="he-description">High blood pressure, or hypertension, is a growing concern in the U.S. The condition can lead to a heart attack, heart failure, and a stroke.</p>
-        <p class="he-description">It may be possible to prevent up to 80% of premature heart disease and stroke diagnoses with lifestyle changes, such as increasing physical activity and healthful eating.</p>
-
-        <div class="center-image-container">
-            <img src="img/heart1.png" alt="Centered Image" class="centered-image">
-        </div>
-
-
-        <h3 class="he-sub-title">DASH Diet Recommendations</h3>
-        <ul class="he-list">
-            <li>Eating plenty of vegetables, fruits, and whole grains</li>
-            <li>Choosing fat-free or low-fat dairy products, fish, poultry, beans, nuts, and vegetable oils</li>
-            <li>Limiting saturated and trans fat intake, such as fatty meats and full-fat dairy products</li>
-            <li>Limiting drinks and foods that contain added sugars</li>
-            <li>Restricting sodium intake to less than 2,300 milligrams per day — ideally 1,500 mg daily</li>
-        </ul>
-
-        <p class="he-description">High-fiber foods are also crucial for keeping the heart healthy. The AHA states that dietary fiber helps improve blood cholesterol and lowers the risk of heart disease, stroke, obesity, and type 2 diabetes.</p>
-        <p class="he-description">The medical community has long recognized the link between trans fats and heart-related illnesses, such as coronary heart disease.</p>
+      <label for="location" class="event-form__label">Location:</label>
+      <input type="text" id="location" name="location" required maxlength="255" class="event-form__input"><br><br>
+    
+      <label for="organiser" class="event-form__label">Organiser:</label>
+      <input type="text" id="organiser" name="organiser" required maxlength="255" class="event-form__input"><br><br>
+    
+      <label for="eventType" class="event-form__label">Event Type:</label>
+      <input type="text" id="eventType" name="event_type" required maxlength="50" class="event-form__input"><br><br>
+    
+      <label for="description" class="event-form__label">Description:</label>
+      <textarea id="description" name="description" class="event-form__textarea"></textarea><br><br>
+    
+      <label for="dateTime" class="event-form__label">Date and Time (ISO format):</label>
+      <input type="datetime-local" id="dateTime" name="date_time" required class="event-form__input"><br><br>
+    
+      <label for="photoFile" class="event-form__label">Event Photo File (Optional):</label>
+      <input type="file" id="photoFile" name="genericevent_photo_file" class="event-form__input"><br><br>
+    
+      <label for="websiteCode" class="event-form__label">Website Code:</label>
+      <input type="text" id="websiteCode" name="website_code" required maxlength="8" class="event-form__input"><br><br>
+    
+      <button type="submit" class="event-form__button">Submit Event</button>
+    </form>
+    
 
 
-        <div class="image-container">
-            <img src="img/heart2.png" alt="Healthy Food">
-        </div>
-        <h3 class="he-sub-title">Reducing Blood Pressure</h3>
-        <p class="he-description">Reducing blood pressure can also promote heart health. Most adults may achieve this by limiting their salt intake to no more than 1,500 mg per day.</p>
-        <p class="he-description">Food manufacturers add salt to many processed and fast foods, and a person who wishes to lower their blood pressure should avoid these products.</p>
-        <div class="image-container">
-            <img src="img/blood001.jpg" alt="Healthy Food">
-        </div>
-    </section>
-</main>
+
+
+    <button type="submit" class="btn btn-action">Post Your Event</button>
+    <div id="submitResponse" class="mt-3 mb-2" role="alert" aria-live="assertive"></div>
+    
+
+
 
 
 
@@ -133,4 +129,6 @@
         </div>
     </footer>
     <script src="js/page_load_message.js"></script>
+    <script type="module" src="js/community space.js"></script>
+
 </body>

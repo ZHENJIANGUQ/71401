@@ -1,39 +1,393 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25em 1em 1.5em;
+  align-items: center;
+}
 
-.calendar-image img {
-    width: 350px;
-    height: auto;
-    border-radius: 12px;
-  }
+.Keep Well logo {
+  margin-left: 5%;
+}
+
+ 
+.header-search {
+  display: flex;
+  align-items: center;
+  margin-right: 5%;
+}
+
+.global-search{
+  align-items: center;
+  display: flex;
+}
+
+nav {
+  position: relative;
+  display: block;
+  font-size: 1.25em;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  height: 64px;
+}
+
+nav li {
+  text-align: center;
+}
+
+.nav a {
+  height: 100%;
+  box-shadow: 0 0.2rem 0.85rem rgba(0, 0, 0, 0.2);
+  background: rgba(167, 146, 146, 0.651);
+  text-decoration-line: none;
+  color: #fffffff1;
+  background-color: #000000;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid transparent;
+  display: flex;
+  transition: 0.2s ease;
+  border-radius: 50px;
+}
+
+.nav .active,
+.nav a:hover {
+  background-color: #000000;
+}
+
+.module-container {
+  background-color: #8a8d95;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  width: 100%; 
+  margin: 0 auto; 
+}
+
   
+.reviews-section {
+  padding: 40px 20px 20px 20px; 
+  margin-top: -20px; 
+  background-color: #657367;
+}
+
+ 
+.reviews-container {
+  display: flex;
+  justify-content: space-between;  
+  gap: 20px;                       
+}
+
+.main {
+  margin-top: -16px;
+  background-color: #D6EAD9;
+  align-items: center;
+  padding-inline: 27%;
+  margin-inline: -10px;
+}
+
+.content {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.footer {
+  background-color: #555757;
+  padding: 40px 0;
+  color: white;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 20%;
+  align-items: flex-start;
+}
+
+.footer-about {
+  width: 60%;
+}
+
+.footer-menu {
+  width: 30%;
+}
+
+
   
-  .navbutton img {
-    width: 100px; 
-    height: auto; 
-    border-radius: 20px; 
-    cursor: pointer; 
-  }
-  
-  .navbutton img:hover {
-    opacity: 0.8; 
-  }
-  
-  .nav-button {
-    position: absolute;
-    margin-top: 40%;
-    left: 85%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .navbutton img {
-    width: 100px;
-    height: auto;
-    border-radius: 5px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: opacity 0.3s ease;
-  }
-  
-  .navbutton img:hover {
-    opacity: 0.8;
-  }
-  
+.footer-menu h2 {
+  text-align: center;
+}
+
+.footer-menu ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: block;
+}
+
+.footer-menu ul li {
+  margin: 10px 0;
+}
+
+.footer-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-about p {
+  line-height: 1.6;
+  text-align: left;
+  color: white;
+  text-align: justify;
+}
+
+
+nav a {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 12px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #555;
+  transform: scale(1.20);
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.video-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h22 {
+    font-size: 24px;
+    color: #333333;
+}
+
+
+
+.video-container {
+  text-align: center; 
+  margin: 20px auto; 
+  max-width: 800px; 
+}
+
+.intro-text {
+  text-align: center;
+  margin: 20px auto;
+  padding: 10px;
+  max-width: 800px;
+}
+
+.intro-text h2 {
+  font-size: 28px;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.intro-text p {
+  font-size: 18px;
+  color: #4b4141;
+  line-height: 1.6;
+}
+
+
+
+.image-container {
+  text-align: center; 
+  margin: 20px 0; 
+}
+
+.image-container img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+.he-main-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #317e2e !important; 
+  color: white;
+}
+
+.he-main-header .he-header-title {
+  font-size: 36px;
+  margin: 0;
+}
+
+.he-main-header .he-header-description {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #fff; 
+  text-align: center; 
+}
+
+.he-main-content {
+  max-width: 800px; 
+  margin: 0 auto; 
+  padding: 20px;
+  text-align: center; 
+}
+
+.he-benefit-section h2,
+.he-benefit-section h3 {
+  text-align: center; 
+}
+
+.he-benefit-section {
+  text-align: left; 
+}
+
+
+
+.center-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-image {
+  max-width: 100%; 
+  height: auto;
+}
+
+
+
+
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center; 
+}
+
+.mh-title-unique {
+  color: #2c3e50;
+  font-size: 2.5em;
+  margin: 20px auto;
+  text-align: center; 
+}
+
+.mh-important-info-unique,
+.mh-paragraph-unique,
+.mh-call-to-action-unique,
+.mh-list-unique li {
+  max-width: 800px;
+  margin: 0 auto 15px auto; 
+  text-align: justify; 
+  line-height: 1.6;
+  padding: 0 15px;
+}
+
+.mh-important-info-unique {
+  background-color: #ff1313;
+  padding: 15px;
+  border-left: 4px solid #2c3e50;
+}
+
+.mh-subtitle-unique {
+  color: #2c3e50;
+  font-size: 1.75em;
+  margin: 20px auto;
+  text-align: center; 
+}
+
+.mh-call-to-action-unique {
+  background-color: #71b577;
+  padding: 15px;
+  border-left: 4px solid #4caf50;
+  margin-top: 20px;
+}
+
+
+
+
+
+.event-form {
+  max-width: 400px; 
+  margin: 0 auto;
+  padding: 15px; 
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 8px; 
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.event-form__label {
+  display: block;
+  margin-bottom: 6px; 
+  font-size: 1rem; 
+  color: #333;
+  font-weight: bold;
+}
+
+
+.event-form__input,
+.event-form__textarea {
+  width: 100%;
+  padding: 10px; 
+  margin-bottom: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 0.95rem; 
+}
+
+
+.event-form__textarea {
+  height: 100px; 
+  resize: vertical;
+}
+
+
+.event-form__button {
+  width: 100%;
+  padding: 10px; 
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem; 
+  transition: background-color 0.3s ease;
+}
+
+.event-form__button:hover {
+  background-color: #218838;
+}
+
+
+#submitResponse {
+  margin-top: 12px; 
+  font-size: 1.1rem; 
+  font-weight: bold;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
