@@ -28,33 +28,31 @@
 
     <nav class="nav" aria-label="primary navigation">
         <ul>
-            <li style="position: absolute; left: 5%;">
+            <li style="position: absolute; left: 12%;">
                 <a href="index.html">Home</a>
             </li>
-            <li class="dropdown" style="position: absolute; left: 22%;">
+            <li class="dropdown" style="position: absolute; left: 29%;">
                 <a href="plan.html" class="active">Training Plan</a>
             </li>
-            <li style="position: absolute; left: 39%;">
+            <li style="position: absolute; left: 46%;">
                 <a href="eating.html">Healthy Eating</a>
             </li>
-            <li style="position: absolute; left: 56%;">
+            <li style="position: absolute; left: 61%;">
                 <a href="mental health.html">Mental Health</a>
             </li>
-            <li style="position: absolute; left: 73%;">
+            <li style="position: absolute; left: 80%;">
                 <a href="community space.html">Community Space</a>
             </li>
-            <li style="position: absolute; left: 90%;">
-                <a href="about us.html">About Us</a>
-            </li>
+
         </ul>
     </nav>
 
     <div id="event-list" class="event-display-area"></div>
     
 
-    <h1 class="event-form__title">Submit Your Event</h1>
+    <h1 class="event-form__title">Submit Your Experience</h1>
     <form id="eventForm" class="event-form">
-      <label for="eventName" class="event-form__label">Event Name:</label>
+      <label for="eventName" class="event-form__label">Name:</label>
       <input type="text" id="eventName" name="event_name" required maxlength="255" class="event-form__input"><br><br>
     
       <label for="location" class="event-form__label">Location:</label>
@@ -63,7 +61,7 @@
       <label for="organiser" class="event-form__label">Organiser:</label>
       <input type="text" id="organiser" name="organiser" required maxlength="255" class="event-form__input"><br><br>
     
-      <label for="eventType" class="event-form__label">Event Type:</label>
+      <label for="eventType" class="event-form__label">Post Type:</label>
       <input type="text" id="eventType" name="event_type" required maxlength="50" class="event-form__input"><br><br>
     
       <label for="description" class="event-form__label">Description:</label>
@@ -75,10 +73,10 @@
       <label for="photoFile" class="event-form__label">Event Photo File (Optional):</label>
       <input type="file" id="photoFile" name="genericevent_photo_file" class="event-form__input"><br><br>
     
-      <label for="websiteCode" class="event-form__label">Website Code:</label>
+      <label for="websiteCode" class="event-form__label">Post Code:</label>
       <input type="text" id="websiteCode" name="website_code" required maxlength="8" class="event-form__input"><br><br>
     
-      <button type="submit" class="event-form__button">Submit Event</button>
+      <button type="submit" class="event-form__button">Submit</button>
       <div id="submitResponse"></div>
     </form>
 
@@ -98,7 +96,7 @@
                     <li><a href="eating.html">Healthy Eating</a></li>
                     <li><a href="mental health.html">Mental Health</a></li>
                     <li><a href="community space.html">Community Space</a></li>
-                    <li><a href="about us.html">About Us</a></li>
+                    
                 </ul>
             </div>
         </div>
