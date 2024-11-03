@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="css/component.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/css_reset.css">
-    
-    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
-
 </head>
 <body>
     <header class="header">
@@ -21,14 +18,13 @@
         <a class="logo-text" href="../home/home.html" title="Keep Well">Keep Well</a>
         <div class="header-search">
             <form action="" class="global-search" method="get" aria-label="Search for parks">
-                <input type="text" value name="query" class="header-search-input" placeholder="Search...">
+                <input type="text" name="query" class="header-search-input" placeholder="Search...">
                 <button name="global_search_submit_button" aria-label="Search button" type="submit">
                     <img src="img/search_button.png" alt="Search Icon">
                 </button>
             </form>
         </div>
     </header>
-
 
     <nav class="nav" aria-label="primary navigation">
         <ul>
@@ -53,11 +49,8 @@
         </ul>
     </nav>
 
-
-
-
-
-
+    <div id="event-list" class="event-display-area"></div>
+    
 
     <h1 class="event-form__title">Submit Your Event</h1>
     <form id="eventForm" class="event-form">
@@ -86,34 +79,16 @@
       <input type="text" id="websiteCode" name="website_code" required maxlength="8" class="event-form__input"><br><br>
     
       <button type="submit" class="event-form__button">Submit Event</button>
+      <div id="submitResponse"></div>
     </form>
-    
-
-
-
-
-    <button type="submit" class="btn btn-action">Post Your Event</button>
-    <div id="submitResponse" class="mt-3 mb-2" role="alert" aria-live="assertive"></div>
-    
-
-
-
-
-
-    
 
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-about">
                 <h2>About us</h2>
-                <p>
-                    Welcome to Keep Well, your personal coach for fitness and wellness. Our target is to help you to take control of your body and mental health by expert guidance, professional training plans, and community support.
-                    
-                    We believe fitness is a excellent journey that includes mental, physical, and emotional well-being. Whatever you’re a beginner or a fitness enthusiast, our team of certified trainers and nutritionists is here to support you every step of the way.
-                    
-                    Join us, and lets make wellness a habit.</p>
-                    
-                <p> Keep Moving. Keep Strong. Keep Well.</p>
+                <p>Welcome to Keep Well, your personal coach for fitness and wellness. Our target is to help you to take control of your body and mental health by expert guidance, professional training plans, and community support.</p>
+                <p>We believe fitness is a excellent journey that includes mental, physical, and emotional well-being. Whatever you’re a beginner or a fitness enthusiast, our team of certified trainers and nutritionists is here to support you every step of the way.</p>
+                <p>Keep Moving. Keep Strong. Keep Well.</p>
             </div>
             <div class="deep footer-menu">
                 <h2>MENU</h2>
@@ -128,9 +103,8 @@
             </div>
         </div>
     </footer>
-    <div id="event-list"></div>
 
     <script src="js/page_load_message.js"></script>
     <script type="module" src="js/community space.js"></script>
-
 </body>
+</html>

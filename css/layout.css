@@ -484,6 +484,54 @@ body {
 
 
 
+.event-display-area {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;  
+  gap: 20px;  
+  padding: 40px;
+  background-color: #d9d9d9;  
+}
+
+
+.event-item {
+  background-color: #f5f5f5;  
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 300px;  
+  padding: 20px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);  
+  text-align: center;
+  transition: transform 0.2s; 
+}
+
+.event-item:hover {
+  transform: translateY(-5px);  
+}
+
+
+.event-item h3 {
+  font-size: 1.3em;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+
+.event-item p {
+  font-size: 0.95em;
+  color: #666;
+  margin: 8px 0;
+}
+
+
+.event-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-top: 15px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);  
+}
+
 
 
 
